@@ -1,1 +1,1 @@
-# skill-income-tracker
+# Skill-income-tracker
