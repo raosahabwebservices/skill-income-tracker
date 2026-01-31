@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skill-to-Income Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Skill-to-Income Tracker</h1>
+
+<!-- Add Skill -->
+<section id="add-skill-section">
+  <h2>Add Skill</h2>
+  <input type="text" id="skillName" placeholder="Skill Name">
+  <button id="addSkillBtn">Add Skill</button>
+  <ul id="skillsList"></ul>
+</section>
+
+<!-- Weekly Log -->
+<section id="weekly-log-section">
+  <h2>Add Weekly Log</h2>
+  <select id="workedLayer">
+    <option value="">Select Layer</option>
+    <option value="KNOWLEDGE">KNOWLEDGE</option>
+    <option value="PRACTICE">PRACTICE</option>
+    <option value="OUTPUT">OUTPUT</option>
+    <option value="REAL_USAGE">REAL_USAGE</option>
+    <option value="INCOME_ATTEMPT">INCOME_ATTEMPT</option>
+  </select>
+  <input type="number" id="effortLevel" placeholder="Effort 1-5" min="1" max="10">
+  <select id="blockerReason">
+    <option value="">Select Blocker</option>
+    <option value="NO_TIME">NO_TIME</option>
+    <option value="NO_CLARITY">NO_CLARITY</option>
+    <option value="FEAR">FEAR</option>
+    <option value="DISTRACTION">DISTRACTION</option>
+    <option value="LACK_OF_RESOURCES">LACK_OF_RESOURCES</option>
+    <option value="AVOIDING_REAL_WORLD">AVOIDING_REAL_WORLD</option>
+  </select>
+  <input type="text" id="notes" placeholder="Notes (max 200 chars)">
+  <button id="addLogBtn">Add Weekly Log</button>
+  <ul id="logsList"></ul>
+</section>
+
+<!-- Verdict Panel -->
+<section id="metrics-section">
+  <h2>Metrics & Verdict</h2>
+  <div id="verdict-panel"></div>
+  <p id="currentLayer">Current Layer: -</p>
+  <p id="readinessScore">Readiness Score: -</p>
+  <p id="flags">Flags: -</p>
+  <p id="verdict">Verdict: -</p>
+</section>
+
+<!-- Action Plan Form -->
+<section id="action-plan-section">
+  <form id="action-plan-form">
+    <h3>Action Plan Required</h3>
+    <input type="text" name="next_week_goal" placeholder="Next Week Goal" required>
+    <input type="text" name="risk_taken" placeholder="Risk Taken" required>
+    <input type="text" name="measurable_outcome" placeholder="Measurable Outcome" required>
+    <button type="submit">Save Action Plan</button>
+  </form>
+</section>
+
+<!-- Navigation Buttons -->
+<section id="navigation-section">
+  <button id="back-btn">Back</button>
+  <button id="skip-btn">Skip</button>
+  <button id="next-btn">Next Week</button>
+</section>
+
+<!-- App Script -->
+<script type="module" src="app.js"></script>
+</body>
+</html>

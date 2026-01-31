@@ -1,0 +1,171 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f8fa; /* light cream */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0d3b66; /* deep sky blue */
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #0d3b66;
+  border-bottom: 2px solid #ffd166; /* cream highlight */
+  padding-bottom: 5px;
+}
+
+h3 {
+  margin-bottom: 15px;
+  color: #3d2c2a; /* dark brown */
+}
+
+/* Sections */
+section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Inputs & Selects */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #00aaff; /* sky blue */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0,170,255,0.3);
+}
+
+/* Buttons */
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#addSkillBtn,
+#addLogBtn,
+#next-btn {
+  background: #00aaff; /* sky blue */
+  color: #fff;
+}
+
+#back-btn,
+#skip-btn {
+  background: #3d2c2a; /* dark brown */
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+/* Verdict Panel */
+#verdict-panel {
+  display: none;
+  padding: 18px 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.low {
+  background: #d4f1f9; /* soft sky blue */
+  border-left: 6px solid #00aaff;
+  color: #0d3b66;
+}
+
+.medium {
+  background: #fff4d6; /* cream */
+  border-left: 6px solid #ffd166;
+  color: #3d2c2a;
+}
+
+.high {
+  background: #ffe5e5; /* light red */
+  border-left: 6px solid #ff4b5c;
+  color: #a00000;
+}
+
+.critical {
+  background: #f5c6cb; /* bright red/pink */
+  border-left: 6px solid #b00000;
+  color: #500000;
+}
+
+/* Action Plan Form */
+#action-plan-form {
+  display: none;
+  padding: 20px;
+  border: 2px dashed #3d2c2a; /* dark brown */
+  border-radius: 12px;
+  background: #fffbea; /* cream */
+  margin-top: 15px;
+}
+
+#action-plan-form input {
+  margin-bottom: 12px;
+}
+
+/* Navigation Section */
+#navigation-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #navigation-section {
+    flex-direction: column;
+  }
+}
